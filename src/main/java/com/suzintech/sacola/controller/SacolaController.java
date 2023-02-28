@@ -4,13 +4,13 @@ import com.suzintech.sacola.controller.dto.ItemDTO;
 import com.suzintech.sacola.model.Item;
 import com.suzintech.sacola.model.Sacola;
 import com.suzintech.sacola.service.SacolaService;
-import io.swagger.annotations.Api;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
-@Api(value = "/sacola")
+@Tag(name = "Sacola")
 @RequestMapping("/sacola")
 public class SacolaController {
 
